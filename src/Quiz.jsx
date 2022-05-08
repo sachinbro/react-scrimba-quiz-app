@@ -52,6 +52,7 @@ export default function Quiz(){
                 ( <div> <span>You scored {score} / 5 correct answers</span> <button className="play-again" onClick={()=> window.location.reload()}>Play Again</button></div>) : <button onClick={() =>gameOver()}>Check Answers</button>}
                 
             </div>
+            <span>Code at <a href="https://github.com/sachinbro/react-scrimba-quiz-app">GitHub</a> </span>
         </div>
     )
 }
