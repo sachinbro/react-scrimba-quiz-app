@@ -10,7 +10,7 @@ export default function Quiz(){
     const [gameStatus, setGameStatus] = React.useState(false)
 
     React.useEffect(() =>{
-        fetch("https://opentdb.com/api.php?amount=5&difficulty=hard&type=multiple")
+        fetch("https://opentdb.com/api.php?amount=5&difficulty=hard&type=multiple&category=18")
         .then(res => res.json())
         .then(data => setQuestion(data.results))
     }, [])
